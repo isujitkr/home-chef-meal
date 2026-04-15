@@ -1,0 +1,69 @@
+
+.meal-card {
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 18px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow var(--transition), transform var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.meal-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.meal-card--unavailable {
+  background: #fdfcfa;
+  opacity: 0.75;
+}
+
+.meal-card__badge {
+  display: flex;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge--available {
+  background: var(--color-available-bg);
+  color: var(--color-available);
+}
+
+.badge--unavailable {
+  background: var(--color-unavailable-bg);
+  color: var(--color-unavailable);
+}
+
+.meal-card__body {
+  flex: 1;
+}
+
+.meal-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.meal-card__price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.meal-card__footer {
+  margin-top: 4px;
+}
